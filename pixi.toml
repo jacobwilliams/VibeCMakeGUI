@@ -1,0 +1,20 @@
+[workspace]
+authors = ["Jacob Williams <jacobwilliams@users.noreply.github.com>"]
+channels = ["conda-forge"]
+name = "VibeCmakeGUI"
+platforms = ["osx-arm64", "linux-64", "linux-aarch64", "win-64", "osx-64"]
+version = "0.1.0"
+
+[tasks]
+start = "python -m vibecmake"
+test = "pytest"
+
+[dependencies]
+python = ">=3.14.8,<3.15"
+qtpy = ">=2.4.3,<3"
+pyside6 = ">=6.11.1,<7"
+cmake = ">=4.4.4,<5"
+pytest = ">=9.1.1,<10"
+pytest-qt = ">=4.5.0,<5"
+ninja = ">=1.13.2,<2"
+gfortran = "15.*"
